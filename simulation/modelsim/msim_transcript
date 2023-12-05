@@ -1,0 +1,115 @@
+# Reading pref.tcl
+# do TeleEcran_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 2020.1 Lib Mapping Utility 2020.02 Feb 28 2020
+# vmap work rtl_work 
+# Copying C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vlog -vlog01compat -work work +incdir+C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/db {C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/db/pll_altpll.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 07:42:54 on Jun 19,2023
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/db" C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/db/pll_altpll.v 
+# -- Compiling module pll_altpll
+# 
+# Top level modules:
+# 	pll_altpll
+# End time: 07:42:55 on Jun 19,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/MemoryReset.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 07:42:55 on Jun 19,2023
+# vcom -reportprogress 300 -93 -work work C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/MemoryReset.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity MemoryReset
+# -- Compiling architecture arch of MemoryReset
+# End time: 07:42:55 on Jun 19,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/QuadratureDecoder.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 07:42:55 on Jun 19,2023
+# vcom -reportprogress 300 -93 -work work C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/QuadratureDecoder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity QuadratureDecoder
+# -- Compiling architecture logic of QuadratureDecoder
+# End time: 07:42:55 on Jun 19,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/hlsm.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 07:42:55 on Jun 19,2023
+# vcom -reportprogress 300 -93 -work work C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/hlsm.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity hlsm
+# -- Compiling architecture arch of hlsm
+# End time: 07:42:55 on Jun 19,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/TeleEcran.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 07:42:55 on Jun 19,2023
+# vcom -reportprogress 300 -93 -work work C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/TeleEcran.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Compiling entity TeleEcran
+# -- Compiling architecture arch of TeleEcran
+# ** Error: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/TeleEcran.vhd(300): (vcom-1436) Actual expression (infix expression) of formal "ar" is not globally static.
+# ** Error: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/TeleEcran.vhd(325): (vcom-1436) Actual expression (infix expression) of formal "set_origin_n" is not globally static.
+# ** Error: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/TeleEcran.vhd(342): (vcom-1436) Actual expression (infix expression) of formal "set_origin_n" is not globally static.
+# ** Error: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/TeleEcran.vhd(359): (vcom-1436) Actual expression (infix expression) of formal "set_origin_n" is not globally static.
+# ** Error: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/TeleEcran.vhd(375): (vcom-1436) Actual expression (infix expression) of formal "set_origin_n" is not globally static.
+# ** Error: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/TeleEcran.vhd(391): (vcom-1436) Actual expression (infix expression) of formal "set_origin_n" is not globally static.
+# ** Note: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/TeleEcran.vhd(604): VHDL Compiler exiting
+# End time: 07:42:55 on Jun 19,2023, Elapsed time: 0:00:00
+# Errors: 6, Warnings: 0
+# ** Error: C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vcom failed.
+# Error in macro ./TeleEcran_run_msim_rtl_vhdl.do line 12
+# C:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/vcom failed.
+#     while executing
+# "vcom -93 -work work {C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/TeleEcran.vhd}"
+do TeleEcran_tb.do
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 07:43:02 on Jun 19,2023
+# vcom -reportprogress 300 -work work C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/simulation/modelsim/TeleEcran_tb.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Loading package MATH_REAL
+# -- Loading package altera_mf_components
+# -- Compiling entity TeleEcran_tb
+# -- Compiling architecture arch of TeleEcran_tb
+# End time: 07:43:02 on Jun 19,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim work.TeleEcran_tb 
+# Start time: 07:43:02 on Jun 19,2023
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading altera_mf.altera_mf_components
+# Loading work.teleecran_tb(arch)
+# ** Error: (vsim-3173) Entity 'C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/simulation/modelsim/rtl_work.teleecran' has no architecture.
+# Load interrupted
+# Error loading design
+# Error: Error loading design
+#        Pausing macro execution
+# MACRO ./TeleEcran_tb.do PAUSED at line 2
+# End time: 07:46:28 on Jun 19,2023, Elapsed time: 0:03:26
+# Errors: 1, Warnings: 0

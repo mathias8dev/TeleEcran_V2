@@ -1,0 +1,397 @@
+Analysis & Synthesis report for TeleEcran
+Mon Jun 19 07:47:20 2023
+Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++---------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                              ;
++-----------------------------+---------------------------------------------+
+; Analysis & Synthesis Status ; Failed - Mon Jun 19 07:47:20 2023           ;
+; Quartus Prime Version       ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
+; Revision Name               ; TeleEcran                                   ;
+; Top-level Entity Name       ; TeleEcran                                   ;
+; Family                      ; Cyclone V                                   ;
+; Logic utilization (in ALMs) ; N/A until Partition Merge                   ;
+; Total registers             ; N/A until Partition Merge                   ;
+; Total pins                  ; N/A until Partition Merge                   ;
+; Total virtual pins          ; N/A until Partition Merge                   ;
+; Total block memory bits     ; N/A until Partition Merge                   ;
+; Total PLLs                  ; N/A until Partition Merge                   ;
+; Total DLLs                  ; N/A until Partition Merge                   ;
++-----------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                             ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                          ; Setting            ; Default Value      ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                          ; 5CGXFC7C7F23C8     ;                    ;
+; Top-level entity name                                                           ; TeleEcran          ; TeleEcran          ;
+; Family name                                                                     ; Cyclone V          ; Cyclone V          ;
+; Use smart compilation                                                           ; Off                ; Off                ;
+; Enable parallel Assembler and Timing Analyzer during compilation                ; On                 ; On                 ;
+; Enable compact report table                                                     ; Off                ; Off                ;
+; Restructure Multiplexers                                                        ; Auto               ; Auto               ;
+; MLAB Add Timing Constraints For Mixed-Port Feed-Through Mode Setting Don't Care ; Off                ; Off                ;
+; Create Debugging Nodes for IP Cores                                             ; Off                ; Off                ;
+; Preserve fewer node names                                                       ; On                 ; On                 ;
+; Intel FPGA IP Evaluation Mode                                                   ; Enable             ; Enable             ;
+; Verilog Version                                                                 ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                                    ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                        ; Auto               ; Auto               ;
+; Safe State Machine                                                              ; Off                ; Off                ;
+; Extract Verilog State Machines                                                  ; On                 ; On                 ;
+; Extract VHDL State Machines                                                     ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                               ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                      ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                                  ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                         ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                       ; On                 ; On                 ;
+; Parallel Synthesis                                                              ; On                 ; On                 ;
+; DSP Block Balancing                                                             ; Auto               ; Auto               ;
+; NOT Gate Push-Back                                                              ; On                 ; On                 ;
+; Power-Up Don't Care                                                             ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                                    ; Off                ; Off                ;
+; Remove Duplicate Registers                                                      ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                            ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                          ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                           ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                       ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                            ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                             ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                                  ; Off                ; Off                ;
+; Optimization Technique                                                          ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                              ; 70                 ; 70                 ;
+; Auto Carry Chains                                                               ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                            ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                           ; Off                ; Off                ;
+; Auto ROM Replacement                                                            ; On                 ; On                 ;
+; Auto RAM Replacement                                                            ; On                 ; On                 ;
+; Auto DSP Block Replacement                                                      ; On                 ; On                 ;
+; Auto Shift Register Replacement                                                 ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                                 ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                                   ; On                 ; On                 ;
+; Strict RAM Replacement                                                          ; Off                ; Off                ;
+; Allow Synchronous Control Signals                                               ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                          ; Off                ; Off                ;
+; Auto Resource Sharing                                                           ; Off                ; Off                ;
+; Allow Any RAM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any ROM Size For Recognition                                              ; Off                ; Off                ;
+; Allow Any Shift Register Size For Recognition                                   ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                             ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                               ; Off                ; Off                ;
+; Timing-Driven Synthesis                                                         ; On                 ; On                 ;
+; Report Parameter Settings                                                       ; On                 ; On                 ;
+; Report Source Assignments                                                       ; On                 ; On                 ;
+; Report Connectivity Checks                                                      ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                              ; Off                ; Off                ;
+; Synchronization Register Chain Length                                           ; 3                  ; 3                  ;
+; Power Optimization During Synthesis                                             ; Normal compilation ; Normal compilation ;
+; HDL message level                                                               ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                                 ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                        ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                              ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                       ; 100                ; 100                ;
+; Clock MUX Protection                                                            ; On                 ; On                 ;
+; Auto Gated Clock Conversion                                                     ; Off                ; Off                ;
+; Block Design Naming                                                             ; Auto               ; Auto               ;
+; SDC constraint protection                                                       ; Off                ; Off                ;
+; Synthesis Effort                                                                ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal                    ; On                 ; On                 ;
+; Pre-Mapping Resynthesis Optimization                                            ; Off                ; Off                ;
+; Analysis & Synthesis Message Level                                              ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                     ; Auto               ; Auto               ;
+; Resource Aware Inference For Block RAM                                          ; On                 ; On                 ;
+; Automatic Parallel Synthesis                                                    ; On                 ; On                 ;
+; Partial Reconfiguration Bitstream ID                                            ; Off                ; Off                ;
++---------------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 8           ;
+; Maximum allowed            ; 4           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+    Info: Processing started: Mon Jun 19 07:47:10 2023
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off TeleEcran -c TeleEcran
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Warning (12125): Using design file teleecran.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: TeleEcran-arch File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/teleecran.vhd Line: 41
+    Info (12023): Found entity 1: TeleEcran File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/teleecran.vhd Line: 6
+Info (12127): Elaborating entity "TeleEcran" for the top level hierarchy
+Warning (12125): Using design file pll.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: pll-SYN File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/pll.vhd Line: 54
+    Info (12023): Found entity 1: pll File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/pll.vhd Line: 43
+Info (12128): Elaborating entity "pll" for hierarchy "pll:pll_inst" File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/teleecran.vhd Line: 282
+Info (12128): Elaborating entity "altpll" for hierarchy "pll:pll_inst|altpll:altpll_component" File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/pll.vhd Line: 141
+Info (12130): Elaborated megafunction instantiation "pll:pll_inst|altpll:altpll_component" File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/pll.vhd Line: 141
+Info (12133): Instantiated megafunction "pll:pll_inst|altpll:altpll_component" with the following parameter: File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/pll.vhd Line: 141
+    Info (12134): Parameter "bandwidth_type" = "AUTO"
+    Info (12134): Parameter "clk0_divide_by" = "1"
+    Info (12134): Parameter "clk0_duty_cycle" = "50"
+    Info (12134): Parameter "clk0_multiply_by" = "2"
+    Info (12134): Parameter "clk0_phase_shift" = "0"
+    Info (12134): Parameter "compensate_clock" = "CLK0"
+    Info (12134): Parameter "inclk0_input_frequency" = "20000"
+    Info (12134): Parameter "intended_device_family" = "MAX 10"
+    Info (12134): Parameter "lpm_hint" = "CBX_MODULE_PREFIX=pll"
+    Info (12134): Parameter "lpm_type" = "altpll"
+    Info (12134): Parameter "operation_mode" = "NORMAL"
+    Info (12134): Parameter "pll_type" = "AUTO"
+    Info (12134): Parameter "port_activeclock" = "PORT_UNUSED"
+    Info (12134): Parameter "port_areset" = "PORT_USED"
+    Info (12134): Parameter "port_clkbad0" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkbad1" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkloss" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkswitch" = "PORT_UNUSED"
+    Info (12134): Parameter "port_configupdate" = "PORT_UNUSED"
+    Info (12134): Parameter "port_fbin" = "PORT_UNUSED"
+    Info (12134): Parameter "port_inclk0" = "PORT_USED"
+    Info (12134): Parameter "port_inclk1" = "PORT_UNUSED"
+    Info (12134): Parameter "port_locked" = "PORT_USED"
+    Info (12134): Parameter "port_pfdena" = "PORT_UNUSED"
+    Info (12134): Parameter "port_phasecounterselect" = "PORT_UNUSED"
+    Info (12134): Parameter "port_phasedone" = "PORT_UNUSED"
+    Info (12134): Parameter "port_phasestep" = "PORT_UNUSED"
+    Info (12134): Parameter "port_phaseupdown" = "PORT_UNUSED"
+    Info (12134): Parameter "port_pllena" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scanaclr" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scanclk" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scanclkena" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scandata" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scandataout" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scandone" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scanread" = "PORT_UNUSED"
+    Info (12134): Parameter "port_scanwrite" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clk0" = "PORT_USED"
+    Info (12134): Parameter "port_clk1" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clk2" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clk3" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clk4" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clk5" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena0" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena1" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena2" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena3" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena4" = "PORT_UNUSED"
+    Info (12134): Parameter "port_clkena5" = "PORT_UNUSED"
+    Info (12134): Parameter "port_extclk0" = "PORT_UNUSED"
+    Info (12134): Parameter "port_extclk1" = "PORT_UNUSED"
+    Info (12134): Parameter "port_extclk2" = "PORT_UNUSED"
+    Info (12134): Parameter "port_extclk3" = "PORT_UNUSED"
+    Info (12134): Parameter "self_reset_on_loss_lock" = "ON"
+    Info (12134): Parameter "width_clock" = "5"
+Info (12021): Found 1 design units, including 1 entities, in source file db/pll_altpll.v
+    Info (12023): Found entity 1: pll_altpll File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/db/pll_altpll.v Line: 30
+Info (12128): Elaborating entity "pll_altpll" for hierarchy "pll:pll_inst|altpll:altpll_component|pll_altpll:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altpll.tdf Line: 898
+Warning (12125): Using design file hlsm.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: hlsm-arch File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/hlsm.vhd Line: 26
+    Info (12023): Found entity 1: hlsm File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/hlsm.vhd Line: 6
+Info (12128): Elaborating entity "hlsm" for hierarchy "hlsm:hlsm_inst" File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/teleecran.vhd Line: 292
+Warning (10492): VHDL Process Statement warning at hlsm.vhd(69): signal "state" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/hlsm.vhd Line: 69
+Warning (10492): VHDL Process Statement warning at hlsm.vhd(73): signal "lines" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/hlsm.vhd Line: 73
+Warning (10492): VHDL Process Statement warning at hlsm.vhd(75): signal "lines" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/hlsm.vhd Line: 75
+Warning (10492): VHDL Process Statement warning at hlsm.vhd(77): signal "cnt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/hlsm.vhd Line: 77
+Warning (10492): VHDL Process Statement warning at hlsm.vhd(78): signal "lines" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/hlsm.vhd Line: 78
+Warning (10492): VHDL Process Statement warning at hlsm.vhd(79): signal "lines" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/hlsm.vhd Line: 79
+Warning (10492): VHDL Process Statement warning at hlsm.vhd(84): signal "lines" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/hlsm.vhd Line: 84
+Warning (10492): VHDL Process Statement warning at hlsm.vhd(94): signal "state" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/hlsm.vhd Line: 94
+Warning (10492): VHDL Process Statement warning at hlsm.vhd(98): signal "pixel" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/hlsm.vhd Line: 98
+Warning (10492): VHDL Process Statement warning at hlsm.vhd(98): signal "cnt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/hlsm.vhd Line: 98
+Warning (10492): VHDL Process Statement warning at hlsm.vhd(99): signal "cnt_pwm" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/hlsm.vhd Line: 99
+Warning (10492): VHDL Process Statement warning at hlsm.vhd(105): signal "state" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/hlsm.vhd Line: 105
+Warning (10492): VHDL Process Statement warning at hlsm.vhd(108): signal "cnt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/hlsm.vhd Line: 108
+Warning (10492): VHDL Process Statement warning at hlsm.vhd(111): signal "state" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/hlsm.vhd Line: 111
+Warning (10492): VHDL Process Statement warning at hlsm.vhd(121): signal "state" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/hlsm.vhd Line: 121
+Warning (10492): VHDL Process Statement warning at hlsm.vhd(125): signal "pixel" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/hlsm.vhd Line: 125
+Warning (10492): VHDL Process Statement warning at hlsm.vhd(125): signal "cnt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/hlsm.vhd Line: 125
+Warning (10492): VHDL Process Statement warning at hlsm.vhd(126): signal "pixel" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/hlsm.vhd Line: 126
+Warning (10492): VHDL Process Statement warning at hlsm.vhd(128): signal "pixel" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/hlsm.vhd Line: 128
+Warning (10492): VHDL Process Statement warning at hlsm.vhd(132): signal "cnt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/hlsm.vhd Line: 132
+Warning (10492): VHDL Process Statement warning at hlsm.vhd(135): signal "pixel" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/hlsm.vhd Line: 135
+Warning (10492): VHDL Process Statement warning at hlsm.vhd(145): signal "state" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/hlsm.vhd Line: 145
+Warning (10492): VHDL Process Statement warning at hlsm.vhd(149): signal "pixel" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/hlsm.vhd Line: 149
+Warning (10492): VHDL Process Statement warning at hlsm.vhd(149): signal "cnt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/hlsm.vhd Line: 149
+Warning (10492): VHDL Process Statement warning at hlsm.vhd(150): signal "ram_add" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/hlsm.vhd Line: 150
+Warning (10492): VHDL Process Statement warning at hlsm.vhd(152): signal "ram_add" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/hlsm.vhd Line: 152
+Warning (10492): VHDL Process Statement warning at hlsm.vhd(155): signal "cnt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/hlsm.vhd Line: 155
+Warning (10492): VHDL Process Statement warning at hlsm.vhd(157): signal "lines" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/hlsm.vhd Line: 157
+Warning (10492): VHDL Process Statement warning at hlsm.vhd(159): signal "ram_add" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/hlsm.vhd Line: 159
+Warning (10492): VHDL Process Statement warning at hlsm.vhd(162): signal "cnt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/hlsm.vhd Line: 162
+Warning (10492): VHDL Process Statement warning at hlsm.vhd(163): signal "ram_add" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/hlsm.vhd Line: 163
+Warning (10492): VHDL Process Statement warning at hlsm.vhd(164): signal "ram_add" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/hlsm.vhd Line: 164
+Warning (10492): VHDL Process Statement warning at hlsm.vhd(169): signal "ram_add" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/hlsm.vhd Line: 169
+Warning (10492): VHDL Process Statement warning at hlsm.vhd(180): signal "state" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/hlsm.vhd Line: 180
+Warning (10492): VHDL Process Statement warning at hlsm.vhd(184): signal "cnt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/hlsm.vhd Line: 184
+Warning (10492): VHDL Process Statement warning at hlsm.vhd(185): signal "cnt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/hlsm.vhd Line: 185
+Warning (10492): VHDL Process Statement warning at hlsm.vhd(190): signal "cnt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/hlsm.vhd Line: 190
+Warning (10492): VHDL Process Statement warning at hlsm.vhd(191): signal "cnt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/hlsm.vhd Line: 191
+Warning (10492): VHDL Process Statement warning at hlsm.vhd(204): signal "state" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/hlsm.vhd Line: 204
+Warning (10492): VHDL Process Statement warning at hlsm.vhd(208): signal "cnt_pwm" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/hlsm.vhd Line: 208
+Warning (10492): VHDL Process Statement warning at hlsm.vhd(210): signal "cnt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/hlsm.vhd Line: 210
+Warning (10492): VHDL Process Statement warning at hlsm.vhd(211): signal "cnt_pwm" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/hlsm.vhd Line: 211
+Warning (10492): VHDL Process Statement warning at hlsm.vhd(213): signal "cnt_pwm" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/hlsm.vhd Line: 213
+Warning (10492): VHDL Process Statement warning at hlsm.vhd(228): signal "state" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/hlsm.vhd Line: 228
+Warning (10492): VHDL Process Statement warning at hlsm.vhd(232): signal "cnt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/hlsm.vhd Line: 232
+Warning (10492): VHDL Process Statement warning at hlsm.vhd(249): signal "state" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/hlsm.vhd Line: 249
+Warning (10492): VHDL Process Statement warning at hlsm.vhd(266): signal "state" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/hlsm.vhd Line: 266
+Warning (10492): VHDL Process Statement warning at hlsm.vhd(272): signal "cnt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/hlsm.vhd Line: 272
+Warning (10492): VHDL Process Statement warning at hlsm.vhd(279): signal "cnt" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/hlsm.vhd Line: 279
+Warning (10492): VHDL Process Statement warning at hlsm.vhd(289): signal "state" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/hlsm.vhd Line: 289
+Warning (12125): Using design file quadraturedecoder.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: QuadratureDecoder-logic File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/quadraturedecoder.vhd Line: 41
+    Info (12023): Found entity 1: QuadratureDecoder File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/quadraturedecoder.vhd Line: 26
+Info (12128): Elaborating entity "QuadratureDecoder" for hierarchy "QuadratureDecoder:xposition_inst" File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/teleecran.vhd Line: 315
+Info (12128): Elaborating entity "QuadratureDecoder" for hierarchy "QuadratureDecoder:yposition_inst" File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/teleecran.vhd Line: 332
+Info (12128): Elaborating entity "QuadratureDecoder" for hierarchy "QuadratureDecoder:rposition_inst" File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/teleecran.vhd Line: 349
+Info (12128): Elaborating entity "QuadratureDecoder" for hierarchy "QuadratureDecoder:bposition_inst" File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/teleecran.vhd Line: 381
+Warning (12125): Using design file memcontroller.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: MemController-arch File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/memcontroller.vhd Line: 23
+    Info (12023): Found entity 1: MemController File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/memcontroller.vhd Line: 6
+Info (12128): Elaborating entity "MemController" for hierarchy "MemController:MemController_inst" File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/teleecran.vhd Line: 398
+Warning (10492): VHDL Process Statement warning at memcontroller.vhd(31): signal "yposition" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/memcontroller.vhd Line: 31
+Warning (10492): VHDL Process Statement warning at memcontroller.vhd(31): signal "xposition" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/memcontroller.vhd Line: 31
+Warning (10631): VHDL Process Statement warning at memcontroller.vhd(25): inferring latch(es) for signal or variable "add_a", which holds its previous value in one or more paths through the process File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/memcontroller.vhd Line: 25
+Info (10041): Inferred latch for "add_a[0]" at memcontroller.vhd(25) File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/memcontroller.vhd Line: 25
+Info (10041): Inferred latch for "add_a[1]" at memcontroller.vhd(25) File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/memcontroller.vhd Line: 25
+Info (10041): Inferred latch for "add_a[2]" at memcontroller.vhd(25) File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/memcontroller.vhd Line: 25
+Info (10041): Inferred latch for "add_a[3]" at memcontroller.vhd(25) File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/memcontroller.vhd Line: 25
+Info (10041): Inferred latch for "add_a[4]" at memcontroller.vhd(25) File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/memcontroller.vhd Line: 25
+Info (10041): Inferred latch for "add_a[5]" at memcontroller.vhd(25) File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/memcontroller.vhd Line: 25
+Info (10041): Inferred latch for "add_a[6]" at memcontroller.vhd(25) File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/memcontroller.vhd Line: 25
+Info (10041): Inferred latch for "add_a[7]" at memcontroller.vhd(25) File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/memcontroller.vhd Line: 25
+Info (10041): Inferred latch for "add_a[8]" at memcontroller.vhd(25) File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/memcontroller.vhd Line: 25
+Warning (12125): Using design file redram.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
+    Info (12022): Found design unit 1: redram-SYN File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/redram.vhd Line: 59
+    Info (12023): Found entity 1: RedRAM File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/redram.vhd Line: 43
+Info (12128): Elaborating entity "RedRAM" for hierarchy "RedRAM:RedRam_inst" File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/teleecran.vhd Line: 418
+Info (12128): Elaborating entity "altsyncram" for hierarchy "RedRAM:RedRam_inst|altsyncram:altsyncram_component" File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/redram.vhd Line: 68
+Info (12130): Elaborated megafunction instantiation "RedRAM:RedRam_inst|altsyncram:altsyncram_component" File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/redram.vhd Line: 68
+Info (12133): Instantiated megafunction "RedRAM:RedRam_inst|altsyncram:altsyncram_component" with the following parameter: File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/redram.vhd Line: 68
+    Info (12134): Parameter "address_aclr_a" = "UNUSED"
+    Info (12134): Parameter "address_aclr_b" = "NONE"
+    Info (12134): Parameter "address_reg_b" = "CLOCK0"
+    Info (12134): Parameter "byte_size" = "8"
+    Info (12134): Parameter "byteena_aclr_a" = "UNUSED"
+    Info (12134): Parameter "byteena_aclr_b" = "NONE"
+    Info (12134): Parameter "byteena_reg_b" = "CLOCK1"
+    Info (12134): Parameter "clock_enable_core_a" = "USE_INPUT_CLKEN"
+    Info (12134): Parameter "clock_enable_core_b" = "USE_INPUT_CLKEN"
+    Info (12134): Parameter "clock_enable_input_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_input_b" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_a" = "BYPASS"
+    Info (12134): Parameter "clock_enable_output_b" = "BYPASS"
+    Info (12134): Parameter "intended_device_family" = "MAX 10"
+    Info (12134): Parameter "ecc_pipeline_stage_enabled" = "FALSE"
+    Info (12134): Parameter "enable_ecc" = "FALSE"
+    Info (12134): Parameter "implement_in_les" = "OFF"
+    Info (12134): Parameter "indata_aclr_a" = "UNUSED"
+    Info (12134): Parameter "indata_aclr_b" = "NONE"
+    Info (12134): Parameter "indata_reg_b" = "CLOCK0"
+    Info (12134): Parameter "init_file" = "redROM.hex"
+    Info (12134): Parameter "init_file_layout" = "PORT_A"
+    Info (12134): Parameter "maximum_depth" = "0"
+    Info (12134): Parameter "numwords_a" = "512"
+    Info (12134): Parameter "numwords_b" = "512"
+    Info (12134): Parameter "operation_mode" = "BIDIR_DUAL_PORT"
+    Info (12134): Parameter "outdata_aclr_a" = "NONE"
+    Info (12134): Parameter "outdata_aclr_b" = "NONE"
+    Info (12134): Parameter "outdata_reg_a" = "CLOCK0"
+    Info (12134): Parameter "outdata_reg_b" = "CLOCK0"
+    Info (12134): Parameter "power_up_uninitialized" = "FALSE"
+    Info (12134): Parameter "ram_block_type" = "AUTO"
+    Info (12134): Parameter "rdcontrol_aclr_b" = "NONE"
+    Info (12134): Parameter "rdcontrol_reg_b" = "CLOCK1"
+    Info (12134): Parameter "read_during_write_mode_mixed_ports" = "OLD_DATA"
+    Info (12134): Parameter "read_during_write_mode_port_a" = "NEW_DATA_WITH_NBE_READ"
+    Info (12134): Parameter "read_during_write_mode_port_b" = "NEW_DATA_WITH_NBE_READ"
+    Info (12134): Parameter "stratixiv_m144k_allow_dual_clocks" = "ON"
+    Info (12134): Parameter "width_a" = "8"
+    Info (12134): Parameter "width_b" = "8"
+    Info (12134): Parameter "width_byteena_a" = "1"
+    Info (12134): Parameter "width_byteena_b" = "1"
+    Info (12134): Parameter "width_eccstatus" = "3"
+    Info (12134): Parameter "widthad_a" = "9"
+    Info (12134): Parameter "widthad_b" = "9"
+    Info (12134): Parameter "wrcontrol_aclr_a" = "UNUSED"
+    Info (12134): Parameter "wrcontrol_aclr_b" = "NONE"
+    Info (12134): Parameter "wrcontrol_wraddress_reg_b" = "CLOCK0"
+    Info (12134): Parameter "lpm_hint" = "UNUSED"
+    Info (12134): Parameter "lpm_type" = "altsyncram"
+Info (12021): Found 1 design units, including 1 entities, in source file db/altsyncram_mv14.tdf
+    Info (12023): Found entity 1: altsyncram_mv14 File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/db/altsyncram_mv14.tdf Line: 28
+Info (12128): Elaborating entity "altsyncram_mv14" for hierarchy "RedRAM:RedRam_inst|altsyncram:altsyncram_component|altsyncram_mv14:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Error (14000): WYSIWYG RAM primitive "ram_block1a0" in operation mode "bidir_dual_port" uses an unsupported value for parameter "port_a_read_during_write_mode"  File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/db/altsyncram_mv14.tdf Line: 41
+Error (14000): WYSIWYG RAM primitive "ram_block1a0" in operation mode "bidir_dual_port" uses an unsupported value for parameter "port_b_read_during_write_mode"  File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/db/altsyncram_mv14.tdf Line: 41
+Error (14000): WYSIWYG RAM primitive "ram_block1a1" in operation mode "bidir_dual_port" uses an unsupported value for parameter "port_a_read_during_write_mode"  File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/db/altsyncram_mv14.tdf Line: 79
+Error (14000): WYSIWYG RAM primitive "ram_block1a1" in operation mode "bidir_dual_port" uses an unsupported value for parameter "port_b_read_during_write_mode"  File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/db/altsyncram_mv14.tdf Line: 79
+Error (14000): WYSIWYG RAM primitive "ram_block1a2" in operation mode "bidir_dual_port" uses an unsupported value for parameter "port_a_read_during_write_mode"  File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/db/altsyncram_mv14.tdf Line: 117
+Error (14000): WYSIWYG RAM primitive "ram_block1a2" in operation mode "bidir_dual_port" uses an unsupported value for parameter "port_b_read_during_write_mode"  File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/db/altsyncram_mv14.tdf Line: 117
+Error (14000): WYSIWYG RAM primitive "ram_block1a3" in operation mode "bidir_dual_port" uses an unsupported value for parameter "port_a_read_during_write_mode"  File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/db/altsyncram_mv14.tdf Line: 155
+Error (14000): WYSIWYG RAM primitive "ram_block1a3" in operation mode "bidir_dual_port" uses an unsupported value for parameter "port_b_read_during_write_mode"  File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/db/altsyncram_mv14.tdf Line: 155
+Error (14000): WYSIWYG RAM primitive "ram_block1a4" in operation mode "bidir_dual_port" uses an unsupported value for parameter "port_a_read_during_write_mode"  File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/db/altsyncram_mv14.tdf Line: 193
+Error (14000): WYSIWYG RAM primitive "ram_block1a4" in operation mode "bidir_dual_port" uses an unsupported value for parameter "port_b_read_during_write_mode"  File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/db/altsyncram_mv14.tdf Line: 193
+Error (14000): WYSIWYG RAM primitive "ram_block1a5" in operation mode "bidir_dual_port" uses an unsupported value for parameter "port_a_read_during_write_mode"  File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/db/altsyncram_mv14.tdf Line: 231
+Error (14000): WYSIWYG RAM primitive "ram_block1a5" in operation mode "bidir_dual_port" uses an unsupported value for parameter "port_b_read_during_write_mode"  File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/db/altsyncram_mv14.tdf Line: 231
+Error (14000): WYSIWYG RAM primitive "ram_block1a6" in operation mode "bidir_dual_port" uses an unsupported value for parameter "port_a_read_during_write_mode"  File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/db/altsyncram_mv14.tdf Line: 269
+Error (14000): WYSIWYG RAM primitive "ram_block1a6" in operation mode "bidir_dual_port" uses an unsupported value for parameter "port_b_read_during_write_mode"  File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/db/altsyncram_mv14.tdf Line: 269
+Error (14000): WYSIWYG RAM primitive "ram_block1a7" in operation mode "bidir_dual_port" uses an unsupported value for parameter "port_a_read_during_write_mode"  File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/db/altsyncram_mv14.tdf Line: 307
+Error (14000): WYSIWYG RAM primitive "ram_block1a7" in operation mode "bidir_dual_port" uses an unsupported value for parameter "port_b_read_during_write_mode"  File: C:/Users/pret/Documents/Code/Electronics/TeleEcran_V2/db/altsyncram_mv14.tdf Line: 307
+Error (12152): Can't elaborate user hierarchy "RedRAM:RedRam_inst|altsyncram:altsyncram_component|altsyncram_mv14:auto_generated" File: c:/intelfpga_lite/20.1/quartus/libraries/megafunctions/altsyncram.tdf Line: 792
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 17 errors, 60 warnings
+    Error: Peak virtual memory: 4856 megabytes
+    Error: Processing ended: Mon Jun 19 07:47:20 2023
+    Error: Elapsed time: 00:00:10
+    Error: Total CPU time (on all processors): 00:00:23
+
+

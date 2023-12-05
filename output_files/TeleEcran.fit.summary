@@ -1,0 +1,18 @@
+Fitter Status : Successful - Mon Jun 19 07:42:01 2023
+Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
+Revision Name : TeleEcran
+Top-level Entity Name : TeleEcran
+Family : MAX 10
+Device : 10M50DAF484C7G
+Timing Models : Final
+Total logic elements : 1,199 / 49,760 ( 2 % )
+    Total combinational functions : 1,161 / 49,760 ( 2 % )
+    Dedicated logic registers : 217 / 49,760 ( < 1 % )
+Total registers : 217
+Total pins : 24 / 360 ( 7 % )
+Total virtual pins : 0
+Total memory bits : 24,576 / 1,677,312 ( 1 % )
+Embedded Multiplier 9-bit elements : 0 / 288 ( 0 % )
+Total PLLs : 1 / 4 ( 25 % )
+UFM blocks : 0 / 1 ( 0 % )
+ADC blocks : 0 / 2 ( 0 % )
